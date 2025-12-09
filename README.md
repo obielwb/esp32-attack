@@ -14,7 +14,7 @@ O objetivo é identificar vulnerabilidades de segurança, mapear possíveis ataq
 
 ## **2.1 Arquitetura**
 
-O sistema é composto por um microcontrolador ESP32 que hospeda um servidor HTTP na porta 80\. Dois LEDs estão conectados aos pinos GPIO 26 e GPIO 27 através de resistores limitadores de corrente. A comunicação é feita via WiFi (802.11 b/g/n) e o controle é realizado por requisições HTTP GET.
+O sistema é composto por um microcontrolador ESP32 que hospeda um servidor HTTP na porta 80\. Dois LEDs estão conectados aos pinos GPIO 26 e GPIO 27 através de resistores limitadores de corrente. A comunicação é feita via WiFi e o controle é realizado por requisições HTTP GET.
 
 ## **2.2 Funcionalidades**
 
@@ -82,6 +82,8 @@ Este ataque explora a ausência total de autenticação no servidor web. Qualque
 | **Risco Resultante** | **CRÍTICO (5/5)** |
 
 **Justificativa:** A probabilidade máxima combinada com alto impacto resulta em risco CRÍTICO. A ausência de autenticação é a vulnerabilidade mais grave do sistema, permitindo que qualquer pessoa na rede controle o dispositivo sem qualquer barreira.
+
+**Evidência do Ataque 2:** https://youtu.be/2Se2nLSAY4E
 
 # **5\. Tabela Consolidada de Ataques**
 
